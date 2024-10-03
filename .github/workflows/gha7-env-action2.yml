@@ -4,9 +4,9 @@ on: push
 
 jobs:  
   
-  greeting_job:
+  default_env_variable:
     runs-on: ubuntu-latest  
- 
+
     steps: 
         - name: Run default env
           if: runner.os == 'Linux'
