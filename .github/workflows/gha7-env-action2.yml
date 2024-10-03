@@ -11,9 +11,10 @@ jobs:
         - name: Run default env
           if: runner.os == 'Linux'
           run: |  
-              echo  runner.os = "$runner_os"
+              echo  GITHUB_ACTION = "$GITHUB_ACTION"
+              echo  GITHUB_ACTION_PATH = "$GITHUB_ACTION_PATH"
               echo  RUNNER_OS = "$RUNNER_OS"
-              echo  env.RUNNER_OS = "$env:RUNNER_OS"
+              echo  GITHUB_EVENT_NAME = "$GITHUB_EVENT_NAME"
   
 
   
