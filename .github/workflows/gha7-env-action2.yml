@@ -12,8 +12,8 @@ jobs:
           if: runner.os == 'Linux'
           run: |  
               echo  runner.os = "$runner_os"
-              echo  runner.os = "$RUNNER_OS"
-              echo  runner.os = "${{env.RUNNER_OS}}"
+              echo  RUNNER_OS = "$RUNNER_OS"
+              echo  env.RUNNER_OS = "${{env.RUNNER_OS}}"
   
 
   
