@@ -9,7 +9,7 @@ jobs:
  
     steps: 
         - name: Run default env
-          if: runner.os == 'Windows'
+          if: runner.os == 'Linux'
           run: |  
               echo  runner.os = "$runner_os"
               echo  runner.os = "$RUNNER_OS"
