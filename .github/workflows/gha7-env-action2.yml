@@ -1,0 +1,20 @@
+name: default env action workflow  
+
+on: push
+
+jobs:  
+  
+  greeting_job:
+    runs-on: ubuntu-latest  
+ 
+    steps: 
+        - name: Run default env
+          if: runner.os == 'Windows'
+          run: |  
+              echo  runner.os = "$runner_os"
+              echo  runner.os = "$RUNNER_OS"
+              echo  runner.os = "${{env.RUNNER_OS}}"
+  
+
+  
+  
