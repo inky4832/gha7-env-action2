@@ -13,7 +13,7 @@ jobs:
           run: |  
               echo  runner.os = "$runner_os"
               echo  RUNNER_OS = "$RUNNER_OS"
-              echo  env.RUNNER_OS = "$env.RUNNER_OS"
+              echo  env.RUNNER_OS = "$env:RUNNER_OS"
   
 
   
